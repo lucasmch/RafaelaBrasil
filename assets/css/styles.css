@@ -97,6 +97,10 @@ section {
   
 }
 
+.modal {
+  display: none;
+}
+
 .metodo {
   background-color: #b69b8a;
 }
@@ -113,6 +117,70 @@ section {
   background-color: #dac8b6;
 }
 
+dialog {
+  background-color: #ede0d0;
+  border: none;
+
+  width: 100%;
+}
+
+.button-navbar {
+  display: none;
+}
+
+#checkbox-menu{
+  position: absolute;
+  opacity: 0;
+}
+
+.button-navbar label{
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 22px;
+  width: 30px;
+}
+
+.button-navbar label span{
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 30px;
+  background: #b57e64;
+  transition: 0.25s ease-in-out;
+}
+
+.button-navbar label span:nth-child(1){
+  top: 0;
+}
+
+.button-navbar label span:nth-child(2){
+  top: 8px;
+}
+
+.button-navbar label span:nth-child(3){
+  top: 16px;
+}
+
+#checkbox-menu:checked + label span:nth-child(1){
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2){
+  opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3){
+  transform: rotate(45deg);
+  top:8px;
+}
+
+.button-navbar {
+  display: none;
+}
+
 @media only screen and (max-width: 700px) {
   .home nav a {
     font-size: 4vw;
@@ -127,6 +195,7 @@ section {
 
   .home nav {
     height: auto;
+    padding-top: 2vw;
   }
 
   .home .content-text {
@@ -163,5 +232,28 @@ section {
     margin-top: 1vh;
   }
 
+  .button-navbar {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    z-index: 1;
+  }
+
+  .home .navbar-desktop a {
+    display: none;
+  }
+
+  .home .navbar-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home .navbar-mobile a {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+  }
 
 }

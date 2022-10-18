@@ -10,14 +10,32 @@
 </head>
 
 <body>
-  <section class="home">
-    <nav>
-      <a href="#">Sobre mim</a>
-      <a href="#">Método</a>
-      <a href="#">Curso MRB</a>
-      <a href="#">Curso Prótese</a>
-      <a href="#">Contatos</a>
+  <section class="home" id="home">
+    <nav class="navbar-desktop">
+      <a href="#home">Sobre mim</a>
+      <a href="#metodo">Método</a>
+      <a href="#curso">Curso MRB</a>
+      <a href="#protese">Curso Prótese</a>
+      <a href="#contatos">Contatos</a>
     </nav>
+    <div class="button-navbar">
+      <input type="checkbox" id="checkbox-menu" onclick="toogleModal()">
+
+      <label for="checkbox-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <dialog>
+      <nav class="navbar-mobile">
+        <a href="#home" onclick="closeModal()">Sobre mim</a>
+        <a href="#metodo" onclick="closeModal()">Método</a>
+        <a href="#curso" onclick="closeModal()">Curso MRB</a>
+        <a href="#protese" onclick="closeModal()">Curso Prótese</a>
+        <a href="#contatos" onclick="closeModal()">Contatos</a>
+      </nav>
+    </dialog>
     <div class="content">
       <div class="content-text">
         <span class="home-title">Rafaela Brasil</span><br>
@@ -58,16 +76,16 @@
       </div>
     </div>
   </section>
-  <section class="metodo">
+  <section class="metodo" id="metodo" >
 
   </section>
-  <section class="curso">
+  <section class="curso" id="curso">
 
   </section>
-  <section class="protese">
+  <section class="protese" id="protese">
 
   </section>
-  <section class="contatos">
+  <section class="contatos" id="contatos">
 
   </section>
   <script src="./assets/js/scripts.js"></script>
