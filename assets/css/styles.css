@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'Colibre Bristole Pro';
+  src: url('../fonts/ColibreBristolePro-Bold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Darcey Oliver';
+  src: url('../fonts/DarceyOliver.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Regular'), url('../fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Myriad Pro Regular', Arial, sans-serif;
+}
+
+section {
+  width: 100%;
+  max-width: 1920px;
+  min-height: 100vh;
+}
+
+.home {
+  background-color: #ede0d0;
+}
+
+.home nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5vh;
+}
+
+.home nav a {
+  text-decoration: none;
+  color: #b78168;
+  font-size: 2vw;
+  transition: 0.5s;
+}
+
+.home nav a:hover {
+  text-decoration: underline;
+}
+
+.home .content {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 10vw 5vw;
+}
+
+.home .content-text {
+  margin-top: 2vh;
+}
+
+.home .content-image {
+  margin-top: 6vh;
+}
+
+.home-title {
+  font-size: 9vw;
+  color: #b57e64;
+  font-family: 'Colibre Bristole Pro', Arial, sans-serif;
+}
+
+.home-subtitle {
+  color: #b69b8a;
+  font-weight: 300;
+  font-size: 2.15vw;
+}
+
+.home-description {
+  color: #b57e64;
+  width: 85%;
+  font-size: 0.98vw;
+  margin-top: 1vh;
+}
+
+.home-image div {
+  height: 100%;
+}
+
+.home-image {
+  height: 70vh;
+  
+}
+
+.metodo {
+  background-color: #b69b8a;
+}
+
+.curso {
+  background-color: #dac8b6;
+}
+
+.protese {
+  background-color: #b69a89;
+}
+
+.contatos {
+  background-color: #dac8b6;
+}
+
+@media only screen and (max-width: 700px) {
+  .home nav a {
+    font-size: 4vw;
+  }
+
+  .home .content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10vw 5vw;
+  }
+
+  .home nav {
+    height: auto;
+  }
+
+  .home .content-text {
+    margin-top: 2vh;
+  }
+
+  .home .content .content-image {
+    margin-top: 4vh;
+  }
+
+  .home .content .content-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-title {
+    font-size: 3rem;
+  }
+  
+  .home-subtitle {
+    color: #b69b8a;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+  
+  .home-description {
+    color: #b57e64;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 1vh;
+  }
+
+
+}
