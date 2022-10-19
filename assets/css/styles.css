@@ -1,18 +1,19 @@
 @font-face {
-  font-family: 'Colibre Bristole Pro';
-  src: url('../fonts/ColibreBristolePro-Bold.otf') format('truetype');
+  font-family: "Colibre Bristole Pro";
+  src: url("../fonts/ColibreBristolePro-Bold.otf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Darcey Oliver';
-  src: url('../fonts/DarceyOliver.ttf') format('truetype');
+  font-family: "Darcey Oliver";
+  src: url("../fonts/DarceyOliver.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Myriad Pro Regular';
+  font-family: "Myriad Pro Regular";
   font-style: normal;
   font-weight: normal;
-  src: local('Myriad Pro Regular'), url('../fonts/MYRIADPRO-REGULAR.woff') format('woff');
+  src: local("Myriad Pro Regular"),
+    url("../fonts/MYRIADPRO-REGULAR.woff") format("woff");
 }
 
 * {
@@ -23,7 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Myriad Pro Regular', Arial, sans-serif;
+  font-family: "Myriad Pro Regular", Arial, sans-serif;
 }
 
 section {
@@ -72,7 +73,7 @@ section {
 .home-title {
   font-size: 9vw;
   color: #b57e64;
-  font-family: 'Colibre Bristole Pro', Arial, sans-serif;
+  font-family: "Colibre Bristole Pro", Arial, sans-serif;
 }
 
 .home-subtitle {
@@ -93,28 +94,11 @@ section {
 }
 
 .home-image {
-  height: 70vh;
-  
+  height: 60vh;
 }
 
 .modal {
   display: none;
-}
-
-.metodo {
-  background-color: #b69b8a;
-}
-
-.curso {
-  background-color: #dac8b6;
-}
-
-.protese {
-  background-color: #b69a89;
-}
-
-.contatos {
-  background-color: #dac8b6;
 }
 
 dialog {
@@ -128,12 +112,12 @@ dialog {
   display: none;
 }
 
-#checkbox-menu{
+#checkbox-menu {
   position: absolute;
   opacity: 0;
 }
 
-.button-navbar label{
+.button-navbar label {
   cursor: pointer;
   position: relative;
   display: block;
@@ -141,7 +125,7 @@ dialog {
   width: 30px;
 }
 
-.button-navbar label span{
+.button-navbar label span {
   position: absolute;
   display: block;
   height: 5px;
@@ -151,34 +135,128 @@ dialog {
   transition: 0.25s ease-in-out;
 }
 
-.button-navbar label span:nth-child(1){
+.button-navbar label span:nth-child(1) {
   top: 0;
 }
 
-.button-navbar label span:nth-child(2){
+.button-navbar label span:nth-child(2) {
   top: 8px;
 }
 
-.button-navbar label span:nth-child(3){
+.button-navbar label span:nth-child(3) {
   top: 16px;
 }
 
-#checkbox-menu:checked + label span:nth-child(1){
+#checkbox-menu:checked + label span:nth-child(1) {
   transform: rotate(-45deg);
   top: 8px;
 }
 
-#checkbox-menu:checked + label span:nth-child(2){
+#checkbox-menu:checked + label span:nth-child(2) {
   opacity: 0;
 }
 
-#checkbox-menu:checked + label span:nth-child(3){
+#checkbox-menu:checked + label span:nth-child(3) {
   transform: rotate(45deg);
-  top:8px;
+  top: 8px;
 }
 
 .button-navbar {
   display: none;
+}
+
+
+.metodoTop {
+  width: 100%;
+  height: 50vh;
+  background-color: #b69a89;
+
+  display: flex;
+}
+
+.metodoTop .left {
+  color: #ede0d0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 8vw;
+}
+
+.metodo-logo {
+  height: 10vw;
+}
+
+.metodoTop .left p {
+  font-size: 0.8rem;
+}
+
+.metodoTop .right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.metodo-image {
+  height: 40vh;
+}
+
+.metodoBottom {
+  width: 100%;
+  height: 50vh;
+  background-color: #dac8b6;
+
+  display: flex;
+  justify-content: end;
+}
+
+.containerMetodo {
+  width: 63%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.containerMetodo span {
+  font-family: "Colibre Bristole Pro", Arial, sans-serif;
+  color: #6c4730;
+  font-size: 2rem;
+}
+
+.containerMetodo p {
+  color: #b57e64;
+  font-size: 1.3rem;
+}
+
+.curso {
+  background-color: #b69a89;
+  height: 50vh;
+}
+
+.curso-image {
+  height: 135vh;
+
+  position: relative;
+  top: -54vh;
+  left: 0;
+  z-index: 1;
+}
+
+.protese {
+  background-color: #dac8b6;
+}
+
+.contatos {
+  background: rgb(182, 155, 138);
+  background: linear-gradient(
+    180deg,
+    rgba(182, 155, 138, 1) 0%,
+    rgba(182, 155, 138, 1) 50%,
+    rgba(218, 200, 182, 1) 50%,
+    rgba(218, 200, 182, 1) 100%
+  );
 }
 
 @media only screen and (max-width: 700px) {
@@ -218,13 +296,13 @@ dialog {
   .home-title {
     font-size: 3rem;
   }
-  
+
   .home-subtitle {
     color: #b69b8a;
     font-weight: 300;
     font-size: 1.5rem;
   }
-  
+
   .home-description {
     color: #b57e64;
     width: 100%;
@@ -256,4 +334,71 @@ dialog {
     font-size: 1.3rem;
   }
 
+  .metodoTop {
+    width: 100%;
+    height: auto;
+    min-height: 50vh;
+    background-color: #b69a89;
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 35px;
+  }
+
+  .metodoTop .left {
+    color: #ede0d0;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 8vw;
+  }
+
+  .metodo-logo {
+    margin-top: 30px;
+    width: 80%;
+    height: auto;
+  }
+
+  .metodoTop .left p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .metodoTop .right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .metodo-image {
+    max-width: 90%;
+  }
+  
+}
+
+@media only screen and (max-width: 1120px) {
+  .containerMetodo span {
+    font-size: 2rem;
+  }
+  
+  .containerMetodo p {
+    font-size: 1.3rem;
+  }
+}
+
+
+@media only screen and (max-width: 1023px) {
+  .curso-image {
+    display: none;
+  }
+
+  .containerMetodo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 }
