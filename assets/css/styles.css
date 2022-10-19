@@ -223,6 +223,8 @@ dialog {
   font-family: "Colibre Bristole Pro", Arial, sans-serif;
   color: #6c4730;
   font-size: 2rem;
+
+  margin-bottom: 4vh;
 }
 
 .containerMetodo p {
@@ -257,6 +259,34 @@ dialog {
     rgba(218, 200, 182, 1) 50%,
     rgba(218, 200, 182, 1) 100%
   );
+}
+
+@media only screen and (max-width: 1120px) {
+  .containerMetodo span {
+    font-size: 1.8rem;
+  }
+  
+  .containerMetodo p {
+    font-size: 1.3rem;
+  }
+}
+
+
+@media only screen and (max-width: 1023px) {
+  .curso-image {
+    display: none;
+  }
+
+  .containerMetodo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .metodoBottom {
+    padding: 20px 0;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -376,29 +406,22 @@ dialog {
   .metodo-image {
     max-width: 90%;
   }
-  
-}
 
-@media only screen and (max-width: 1120px) {
+  .metodoBottom {
+    height: auto;
+    min-height: 50vh;
+
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 0;
+  }
+
   .containerMetodo span {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
   
   .containerMetodo p {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
-}
-
-
-@media only screen and (max-width: 1023px) {
-  .curso-image {
-    display: none;
-  }
-
-  .containerMetodo {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
+  
 }
