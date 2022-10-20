@@ -297,7 +297,7 @@ dialog {
 }
 
 .protese-content div {
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   color: #6c4730;
 }
 
@@ -459,11 +459,7 @@ dialog {
     margin: 5vh 0;
   }
 
-  .curso-content div {
-    font-size: 1.5rem;
-  }
-
-  .protese-content div {
+  .curso-content div, .protese-content div {
     font-size: 1.5rem;
   }
 
@@ -514,7 +510,6 @@ dialog {
   }
 
   .protese-content div {
-    font-size: 1rem;
     color: #6c4730;
     width: 90%;
   }
@@ -603,14 +598,13 @@ dialog {
     font-weight: normal;
   }
   
-  .curso-content div {
+  .curso-content div, .protese-content div {
     font-size: 1.3rem;
-    width: 80%;
-    margin-right: 0%;
   }
 
-  .protese-content div {
-    font-size: 1.3rem;
+  .curso-content div {
+    width: 80%;
+    margin-right: 0%;
   }
 
   .curso {
@@ -783,9 +777,5 @@ dialog {
 
   .curso-content {
     margin-left: 8vw;
-  }
-
-  .curso-content div {
-    font-size: 1rem;
   }
 }
