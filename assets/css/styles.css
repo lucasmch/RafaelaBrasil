@@ -176,7 +176,7 @@ dialog {
 
 .metodoTop .left {
   color: #ede0d0;
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -188,18 +188,18 @@ dialog {
 }
 
 .metodoTop .left p {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 
 .metodoTop .right {
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .metodo-image {
-  height: 40vh;
+  height: 48vh;
 }
 
 .metodoBottom {
@@ -222,7 +222,7 @@ dialog {
 .containerMetodo span {
   font-family: "Colibre Bristole Pro", Arial, sans-serif;
   color: #6c4730;
-  font-size: 2rem;
+  font-size: 36px;
 
   margin-bottom: 4vh;
 }
@@ -234,7 +234,10 @@ dialog {
 
 .curso {
   background-color: #b69a89;
-  height: 50vh;
+  min-height: 80vh;
+  height: 80vh;
+  z-index: 2;
+  display: flex;
 }
 
 .curso-image {
@@ -248,32 +251,217 @@ dialog {
 
 .protese {
   background-color: #dac8b6;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.contatos {
+.protese h1 {
+  font-size: 3rem;
+  font-family: "Colibre Bristole Pro", Arial, sans-serif;
+  color: #6c4730;
+}
+
+.protese .h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b69a89;
+  padding-bottom: 5vh;
+}
+
+.protese .h2 h2 {
+  font-size: 2.5rem;
+  width: 80%;
+  font-family: "Colibre Bristole Pro", Arial, sans-serif;
+  color: #6c4730;
+}
+
+.protese-content {
+  margin: 20vh 0;
+  display: flex;
+  justify-content: center;
+  text-align: start;
+
+  width: 100%;
+}
+
+.protese-content div {
+  font-size: 1.5rem;
+  font-weight: bold ;
+  color: #6c4730;
+}
+
+.contatos1 {
+  background-color: #b69a89;
+  min-height: 10vh;
+
+  display: flex;
+  flex-direction: row;
+}
+.contatos1 .h1 {
+  width: 35%;
+  font-size: 7vw;
+  font-family: "Colibre Bristole Pro", Arial, sans-serif;
+  color: #6c4730;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.contatos1 .h2 {
+  width: 65%;
+  font-size: 2vw;
+  font-family: "Colibre Bristole Pro", Arial, sans-serif;
+  color: #6c4730;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.contatos2 {
+  min-height: 90vh;
   background: rgb(182, 155, 138);
   background: linear-gradient(
     180deg,
     rgba(182, 155, 138, 1) 0%,
-    rgba(182, 155, 138, 1) 50%,
-    rgba(218, 200, 182, 1) 50%,
+    rgba(182, 155, 138, 1) 18%,
+    rgba(218, 200, 182, 1) 18%,
     rgba(218, 200, 182, 1) 100%
   );
+
+  z-index: 2;
+  display: flex;
 }
 
-@media only screen and (max-width: 1120px) {
+.contatos-image {
+  height: 90vh;
+
+  position: relative;
+  top: 0vh;
+  left: 0;
+  z-index: 1;
+}
+
+.contatos-content {
+  margin-top: 18vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: end;
+}
+
+.prices {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.prices img {
+  width: 50vh;
+  max-width: 100%;
+
+}
+
+.prices-buttom {
+  width: 50%;
+  
+  height: 8vh;
+  line-height: 80%;
+  padding: 10px 5px;
+  border-radius: 10px;
+  margin-top: 20px;
+
+  background-color: #6c4730;
+  color: #dac8b6;
+  font-family: "Colibre Bristole Pro", Arial, sans-serif;
+  font-size: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+}
+
+.curso-contentOne h1 {
+  font-size: 3rem;
+  font-family: "Colibre Bristole Pro", Arial, sans-serif;
+  color: #6c4730;
+}
+
+.curso-content {
+  margin: 10vh 0;
+  display: flex;
+  justify-content: center;
+  text-align: start;
+
+  width: 100%;
+}
+
+.curso-content div {
+  font-size: 2rem;
+  font-weight: bold ;
+  color: #6c4730;
+  width: 50%;
+  margin-right: 10%;
+}
+
+@media only screen and (max-width: 1440px) {
+  .containerMetodo {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .containerMetodo {
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .containerMetodo {
+    width: 50%;
+  }
+
   .containerMetodo span {
-    font-size: 1.8rem;
+    font-size: 30px;
   }
   
   .containerMetodo p {
     font-size: 1.3rem;
+  }
+
+  .protese-content {
+    margin: 10vh 0;
+  }
+
+  .curso-content {
+    margin: 5vh 0;
+  }
+
+  .prices-buttom {
+    width: 60%;
+    font-size: 2rem;
+  }
+
+  .curso {
+    height: 100vh;
   }
 }
 
 
 @media only screen and (max-width: 1023px) {
   .curso-image {
+    display: none;
+  }
+
+  .contatos-image {
     display: none;
   }
 
@@ -286,6 +474,104 @@ dialog {
 
   .metodoBottom {
     padding: 20px 0;
+  }
+
+  .protese-content {
+    margin: 10vh 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .protese h1 {
+    font-size: 2.5rem;
+  }
+
+  .protese .h2 h2 {
+    font-size: 1.5rem;
+    width: 80%;
+    font-family: "Colibre Bristole Pro", Arial, sans-serif;
+    color: #6c4730;
+  }
+
+  .contatos1 {
+    background-color: #b69a89;
+    min-height: 10vh;
+  
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 50px 0 35px 0;
+  }
+
+  .contatos1 .h1, .contatos1 .h2 {
+    width: 100%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contatos1 .h1 {
+    font-size: 2rem;
+    margin-top: 2vh;
+  }
+
+  .contatos1 .h2 {
+    font-size: 1rem;
+  }
+
+  .contatos2 {
+    background: rgba(218, 200, 182, 1);
+    background: linear-gradient(
+      180deg,
+      rgba(218, 200, 182, 1) 0%,
+      rgba(218, 200, 182, 1) 18%,
+      rgba(218, 200, 182, 1) 18%,
+      rgba(218, 200, 182, 1) 100%
+    );
+
+    display: flex;
+    flex-direction: row;  
+    min-height: 90vh;
+  }
+
+  .contatos-content {
+    margin-top: 2vh;
+    justify-content: center;
+  }
+
+  .prices {
+    width: 90%;
+    align-items: center;
+  }
+
+  .curso {
+    justify-content: center;
+  }
+
+  .curso-contentOne {
+    text-align: center;
+  }
+
+  .curso-content {
+    margin: 10vh 0;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .curso-contentOne h1 {
+    font-size: 2rem;
+  }
+  
+  .curso-content div {
+    font-size: 1.2rem;
+    width: 80%;
+    margin-right: 0%;
+  }
+
+  .curso {
+    height: auto;
   }
 }
 
@@ -417,11 +703,19 @@ dialog {
   }
 
   .containerMetodo span {
-    font-size: 1.3rem;
+    font-size: 24px;
   }
   
   .containerMetodo p {
     font-size: 1rem;
   }
-  
+
+  .protese-content {
+    margin: 5vh 0;
+  }
+
+  .prices-buttom {
+    width: 80%;
+    font-size: 1.5rem;
+  }
 }
