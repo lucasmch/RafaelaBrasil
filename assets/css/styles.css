@@ -320,7 +320,7 @@ dialog {
 }
 .contatos1 .h2 {
   width: 65%;
-  font-size: 1.5vw;
+  font-size: 1.6vw;
   font-family: "Colibre Bristole Pro", Arial, sans-serif;
   color: #6c4730;
 
@@ -370,7 +370,7 @@ dialog {
 }
 
 .prices img {
-  width: 50vh;
+  width: 65vh;
   max-width: 100%;
   margin-right: 4vh;
 }
@@ -426,9 +426,46 @@ dialog {
   align-items: center;
 }
 
+footer {
+  width: 100%;
+  min-height: 15vh;
+  background-color: #b78168;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+
+footer svg {
+  text-decoration: none;
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.7rem;
+  margin-right: 10px;
+}
+
 @media only screen and (max-width: 1440px) {
   .containerMetodo {
     width: 60%;
+  }
+  .prices img {
+    width: 60vh;
   }
 }
 
@@ -436,11 +473,17 @@ dialog {
   .containerMetodo {
     width: 55%;
   }
+  .prices img {
+    width: 55vh;
+  }
 }
 
 @media only screen and (max-width: 1240px) {
   .containerMetodo {
     width: 50%;
+  }
+  .prices img {
+    width: 50vh;
   }
 
   .containerMetodo span {
@@ -472,11 +515,20 @@ dialog {
     height: 100vh;
   }
 }
+@media only screen and (max-width: 1100px) {
+  .prices img {
+    width: 45vh;
+  }
+}
 
 
 @media only screen and (max-width: 1023px) {
   .curso-image {
     display: none;
+  }
+
+  .prices img {
+    width: 50vh;
   }
 
   .contatos-image {
@@ -515,7 +567,7 @@ dialog {
   }
 
   .protese .h2 h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     width: 80%;
     font-family: "Colibre Bristole Pro", Arial, sans-serif;
     color: #6c4730;
@@ -616,6 +668,14 @@ dialog {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer div {
+    padding: 2vh 0;
   }
 }
 
