@@ -259,9 +259,17 @@ dialog {
 }
 
 .protese h1 {
+  font-size: 2.5rem;
+  font-family: "Colibre Bristole Pro", Arial, sans-serif;
+  color: #6c4730;
+  margin: 10vh 0;
+}
+
+.protese #protese {
   font-size: 3rem;
   font-family: "Colibre Bristole Pro", Arial, sans-serif;
   color: #6c4730;
+  margin: 5vh 0 10vh;
 }
 
 .protese .h2 {
@@ -281,7 +289,6 @@ dialog {
 }
 
 .protese-content {
-  margin: 20vh 0;
   display: flex;
   justify-content: center;
   text-align: start;
@@ -290,7 +297,7 @@ dialog {
 }
 
 .protese-content div {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold ;
   color: #6c4730;
 }
@@ -314,7 +321,7 @@ dialog {
 }
 .contatos1 .h2 {
   width: 65%;
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-family: "Colibre Bristole Pro", Arial, sans-serif;
   color: #6c4730;
 
@@ -352,7 +359,7 @@ dialog {
   width: 100%;
 
   display: flex;
-  justify-content: end;
+  justify-content: center;
 }
 
 .prices {
@@ -360,12 +367,13 @@ dialog {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .prices img {
   width: 50vh;
   max-width: 100%;
-
+  margin-right: 4vh;
 }
 
 .prices-buttom {
@@ -375,7 +383,7 @@ dialog {
   line-height: 80%;
   padding: 10px 5px;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 8vh;
 
   background-color: #6c4730;
   color: #dac8b6;
@@ -477,13 +485,25 @@ dialog {
   }
 
   .protese-content {
-    margin: 10vh 0;
+    margin: 5vh 0;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 
   .protese h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+
+  .protese #protese {
+    font-size: 2rem;
+  }
+
+  .protese-content div {
+    font-size: 1.3rem;
+    font-weight: bold ;
+    color: #6c4730;
+    width: 90%;
   }
 
   .protese .h2 h2 {
@@ -498,7 +518,7 @@ dialog {
     min-height: 10vh;
   
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 50px 0 35px 0;
   }
 
@@ -543,6 +563,11 @@ dialog {
   .prices {
     width: 90%;
     align-items: center;
+  }
+
+  .prices img {
+    margin-right: 0vh;
+    margin-top: 4vh;
   }
 
   .curso {
