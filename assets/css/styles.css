@@ -765,6 +765,13 @@ dialog {
     font-size: 24px;
   }
 
+  .protese #protese {
+    width: 90%;
+    font-size: 24px;
+    color: #6c4730;
+    margin: 5vh 0 5vh;
+  }
+
   .curso-content {
     margin-left: 8vw;
   }
