@@ -297,8 +297,7 @@ dialog {
 }
 
 .protese-content div {
-  font-size: 1.8rem;
-  font-weight: bold ;
+  font-size: 1.3rem;
   color: #6c4730;
 }
 
@@ -414,8 +413,7 @@ dialog {
 }
 
 .curso-content div {
-  font-size: 2rem;
-  font-weight: bold ;
+  font-size: 1.8rem;
   color: #6c4730;
   width: 50%;
   margin-right: 10%;
@@ -459,6 +457,14 @@ dialog {
 
   .curso-content {
     margin: 5vh 0;
+  }
+
+  .curso-content div {
+    font-size: 1.5rem;
+  }
+
+  .protese-content div {
+    font-size: 1.5rem;
   }
 
   .prices-buttom {
@@ -509,7 +515,6 @@ dialog {
 
   .protese-content div {
     font-size: 1rem;
-    font-weight: bold ;
     color: #6c4730;
     width: 90%;
   }
@@ -594,15 +599,18 @@ dialog {
   .curso-contentOne h1 {
     font-size: 30px;
 
-    margin-top: 1vh;
-    margin: 1 2vh 0;
+    margin: 2vh 1vh 0;
     font-weight: normal;
   }
   
   .curso-content div {
-    font-size: 1rem;
+    font-size: 1.3rem;
     width: 80%;
     margin-right: 0%;
+  }
+
+  .protese-content div {
+    font-size: 1.3rem;
   }
 
   .curso {
@@ -745,6 +753,7 @@ dialog {
   }
 
   .containerMetodo span {
+    margin-top: 2vh;
     font-size: 24px;
   }
   
@@ -774,5 +783,9 @@ dialog {
 
   .curso-content {
     margin-left: 8vw;
+  }
+
+  .curso-content div {
+    font-size: 1rem;
   }
 }
