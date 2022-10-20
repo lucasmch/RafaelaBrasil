@@ -401,6 +401,7 @@ dialog {
   font-size: 3rem;
   font-family: "Colibre Bristole Pro", Arial, sans-serif;
   color: #6c4730;
+  font-weight: lighter;
 }
 
 .curso-content {
@@ -581,12 +582,14 @@ dialog {
   .curso-content {
     margin: 10vh 0;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
   }
 
   .curso-contentOne h1 {
-    font-size: 2rem;
+    font-size: 30px;
+
+    margin-top: 1vh;
+    margin: 1 2vh 0;
+    font-weight: normal;
   }
   
   .curso-content div {
@@ -742,5 +745,9 @@ dialog {
   .prices-buttom {
     width: 80%;
     font-size: 1.5rem;
+  }
+
+  .curso-contentOne h1 {
+    font-size: 24px;
   }
 }
