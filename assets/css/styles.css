@@ -836,6 +836,6 @@ footer svg {
   }
 
   .curso-content {
-    margin-left: 8vw;
+    align-items: center;
   }
 }
